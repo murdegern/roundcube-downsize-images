@@ -1,0 +1,32 @@
+{
+    "name": "murdegern/roundcube-downsize-images",
+    "description": "This is a plugin to reduce the size of attached pictures",
+    "keywords": ["roundcubemail","attachment","image","picture","resize","scale","downscale","downsize"],
+    "license": "BSD-3-Clause",
+    "type": "roundcube-plugin",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Torsten Luettgert",
+            "email": "st-roundcube@luettgert.de",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://plugins.roundcube.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "roundcube/plugin-installer": ">=0.2.0"
+    },
+    "extra": {
+        "roundcube": {
+            "min-version": "1.5",
+            "post-install-script": "echo 'POST-INSTALL SCRIPT'",
+            "post-update-script": "echo 'POST-UPDATE SCRIPT'"
+        }
+    }
+}
